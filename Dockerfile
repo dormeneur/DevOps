@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Install Flask
-RUN pip install flask
+RUN pip install -r requirements.txt
 
 # Tell the container how to run your app
 CMD ["python", "app.py"]
